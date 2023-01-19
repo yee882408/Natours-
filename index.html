@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+    </style>
+    <link rel="stylesheet" href="./sass/main.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>Natours | 最專業的戶外運動規劃</title>
+  </head>
+  <body>
+    <!-- ------------------- -->
+    <!-- 導覽列 -->
+    <div class="navigation">
+      <input type="checkbox" class="navigation_checkbox" id="navi-toggle" />
+
+      <label for="navi-toggle" class="navigation_button">
+        <span class="navigation_icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation_background">&nbsp;</div>
+
+      <nav class="navigation_nav">
+        <ul class="navigation_list">
+          <li class="navigation_item">
+            <a href="#" class="navigation_link"><span>01</span>關於</a>
+          </li>
+          <li class="navigation_item">
+            <a href="#" class="navigation_link"><span>02</span>優惠</a>
+          </li>
+          <li class="navigation_item">
+            <a href="#" class="navigation_link"><span>03</span>熱門行程</a>
+          </li>
+          <li class="navigation_item">
+            <a href="#" class="navigation_link"><span>04</span>故事</a>
+          </li>
+          <li class="navigation_item">
+            <a href="#" class="navigation_link"><span>05</span>下訂</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- ------------------- -->
+    <!-- header -->
+
+    <header class="header">
+      <div class="header__logo-box">
+        <img src="img/logo-white.png" alt="logo" class="header__logo" />
+      </div>
+      <div class="header__text-box">
+        <h1 class="heading-element">
+          <span class="heading-element--main">戶外運動</span>
+          <span class="heading-element--sub">是讓您身心靈放鬆的最好選擇</span>
+        </h1>
+        <a href="#section-tours" class="btn btn--white btn--animated"
+          >開始探索</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <!-- ------------------- -->
+      <!-- 簡單介紹 -->
+
+      <section class="section-about">
+        <div class="u-content-text">
+          <h2 class="heading-secondary">更多精彩刺激的活動等您來發掘</h2>
+
+          <div class="section-about_content">
+            <div class="about_review">
+              <h3 class="content_word">風景優美的戶外運動地點</h3>
+              <p class="paragraph">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. A
+                deleniti et esse explicabo modi eligendi! Lorem ipsum dolor sit
+                amet consectetur, adipisicing elit. Accusantium adipisci quo
+                maxime molestiae reprehenderit voluptatum!
+              </p>
+              <h3 class="content_word">驚喜滿滿的行程規劃</h3>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                quos suscipit, quibusdam vero unde est!
+              </p>
+              <a href="#" class="btn-sub">了解更多 &rarr;</a>
+            </div>
+
+            <div class="about_image">
+              <div class="composition">
+                <img
+                  srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                  sizes="(max-width:56.25em) 20vw, (max-width:37.5em) 30vw, 300px"
+                  alt="Photo 1"
+                  class="composition_photo composition_photo-p1"
+                  src="./img/nat-1-large.jpg"
+                />
+                <img
+                  srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                  sizes="(max-width:56.25em) 20vw, (max-width:37.5em) 30vw, 300px"
+                  alt="Photo 2"
+                  class="composition_photo composition_photo-p2"
+                  src="./img/nat-2-large.jpg"
+                />
+                <img
+                  srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                  sizes="(max-width:56.25em) 20vw, (max-width:37.5em) 30vw, 300px"
+                  alt="Photo 3"
+                  class="composition_photo composition_photo-p3"
+                  src="./img/nat-3-large.jpg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------- -->
+      <!-- 四大重點 -->
+
+      <section class="section-features">
+        <div class="features-box">
+          <svg class="features-box_icon icon-world">
+            <use xlink:href="img/sprite.svg#icon-globe"></use>
+          </svg>
+          <h3 class="heading-secondary">探索世界</h3>
+          <p class="features-box_text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. A deleniti
+            et esse explicabo
+          </p>
+        </div>
+        <div class="features-box">
+          <svg class="features-box_icon icon-direction">
+            <use xlink:href="img/sprite.svg#icon-direction"></use>
+          </svg>
+          <h3 class="heading-secondary">相遇自然</h3>
+          <p class="features-box_text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. A deleniti
+            et esse explicabo
+          </p>
+        </div>
+        <div class="features-box">
+          <svg class="features-box_icon icon-map">
+            <use xlink:href="img/sprite.svg#icon-map2"></use>
+          </svg>
+          <h3 class="heading-secondary">活出自我</h3>
+          <p class="features-box_text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. A deleniti
+            et esse explicabo
+          </p>
+        </div>
+        <div class="features-box">
+          <svg class="features-box_icon icon-heart">
+            <use xlink:href="img/sprite.svg#icon-heart"></use>
+          </svg>
+          <h3 class="heading-secondary">健康生活</h3>
+          <p class="features-box_text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. A deleniti
+            et esse explicabo
+          </p>
+        </div>
+      </section>
+
+      <!-- ------------------- -->
+      <!-- 三大卡片 -->
+
+      <section class="section-tours" id="section-tours">
+        <div class="tours-text">
+          <h2 class="heading-secondary form_size">
+            更多精彩刺激的活動等您來發掘
+          </h2>
+        </div>
+
+        <div class="tours-card">
+          <div class="card">
+            <div class="card_side card_side-front card_side-front-1">
+              <div class="card_picture card_picture-1"></div>
+              <h4 class="card_heading">
+                <span class="card_heading-span card_heading-span-1"
+                  >海洋冒險</span
+                >
+              </h4>
+              <div class="card_details">
+                <ul>
+                  <li>三日行程</li>
+                  <li>最多十人一團</li>
+                  <li>兩小時導覽</li>
+                  <li>高級旅館</li>
+                  <li>難易度：簡單</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card_side card_side-back card_side-back-1">
+              <div class="card_cta">
+                <div class="card_price-box">
+                  <p class="card_price-only">超值價格</p>
+                  <p class="card_price-value">$3000</p>
+                </div>
+                <a href="#popup" class="btn btn--white">現在就下訂!!</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card_side card_side-front card_side-front-2">
+              <div class="card_picture card_picture-2"></div>
+
+              <h4 class="card_heading">
+                <span class="card_heading-span card_heading-span-2"
+                  >深山探險</span
+                >
+              </h4>
+              <div class="card_details">
+                <ul>
+                  <li>三日行程</li>
+                  <li>最多十人一團</li>
+                  <li>兩小時導覽</li>
+                  <li>高級旅館</li>
+                  <li>難易度：中等</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card_side card_side-back card_side-back-2">
+              <div class="card_cta">
+                <div class="card_price-box">
+                  <p class="card_price-only">超值價格</p>
+                  <p class="card_price-value">$3000</p>
+                </div>
+                <a href="#popup" class="btn btn--white">現在就下訂!!</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card_side card_side-front card_side-front-3">
+              <div class="card_picture card_picture-3"></div>
+              <h4 class="card_heading">
+                <span class="card_heading-span card_heading-span-3"
+                  >野外求生</span
+                >
+              </h4>
+              <div class="card_details">
+                <ul>
+                  <li>三日行程</li>
+                  <li>最多十人一團</li>
+                  <li>兩小時導覽</li>
+                  <li>高級旅館</li>
+                  <li>難易度：困難</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card_side card_side-back card_side-back-3">
+              <div class="card_cta">
+                <div class="card_price-box">
+                  <p class="card_price-only">超值價格</p>
+                  <p class="card_price-value">$3000</p>
+                </div>
+                <a href="#popup" class="btn btn--white">現在就下訂!!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tours-text u-margin-top rwd_change">
+          <a href="#" class="btn btn--green">探索其他行程</a>
+        </div>
+      </section>
+
+      <!-- ------------------- -->
+      <!-- 作者推薦 -->
+
+      <section class="section-stories">
+        <div class="tours-text">
+          <h2 class="heading-secondary form_size">
+            更多精彩刺激的活動等您來發掘
+          </h2>
+        </div>
+        <div class="story">
+          <!-- ------------------- -->
+          <!-- 背景影片 -->
+
+          <div class="bg-video">
+            <video class="bg-video_content" autoplay muted loop>
+              <source src="./img/video.mp4" type="video/mp4" />
+              <source src="./img/video.webm" type="video/webm" />
+              此瀏覽器不支援此種播放方式!!
+            </video>
+          </div>
+
+          <!-- ------------------- -->
+          <!-- 作者內容 -->
+
+          <div class="story_in">
+            <figure class="story_in_shape">
+              <img
+                src="./img/nat-8.jpg"
+                alt="Person on a tour"
+                class="story_in_img"
+              />
+              <figcaption class="story_in_caption">Emma stone</figcaption>
+            </figure>
+            <div class="story_text">
+              <h3>從未擁有過的體驗</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+                expedita delectus, dolores esse in fugit. Lorem ipsum dolor sit
+                amet, consectetur adipisicing elit. Quos expedita delectus,
+                dolores esse in fugit. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Quos expedita delectus, dolores esse in fugit.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="story">
+          <div class="story_in">
+            <figure class="story_in_shape">
+              <img
+                src="./img/nat-9.jpg"
+                alt="Person on a tour"
+                class="story_in_img"
+              />
+              <figcaption class="story_in_caption">Tom cruise</figcaption>
+            </figure>
+            <div class="story_text">
+              <h3>非常難忘的經驗</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+                expedita delectus, dolores esse in fugit. Lorem ipsum dolor sit
+                amet, consectetur adipisicing elit. Quos expedita delectus,
+                dolores esse in fugit. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Quos expedita delectus, dolores esse in fugit.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tours-text rwd_change">
+          <a href="#" class="btn-sub">其他故事 &rarr;</a>
+        </div>
+      </section>
+
+      <!-- ------------------- -->
+      <!-- 底部表單 -->
+
+      <section class="section-book">
+        <div class="book-flex">
+          <div class="book">
+            <div class="book_form">
+              <form action="#" class="form">
+                <div class="tours-text form_word">
+                  <h2 class="heading-secondary form_size">
+                    開始預約有趣的戶外運動
+                  </h2>
+                </div>
+
+                <div class="form_group">
+                  <input
+                    type="text"
+                    class="form_input"
+                    placeholder="全名"
+                    id="name"
+                    required
+                  />
+                  <label for="name" class="form_label">全名</label>
+                </div>
+
+                <div class="form_group">
+                  <input
+                    type="email"
+                    class="form_input"
+                    placeholder="Email"
+                    id="email"
+                    required
+                  />
+                  <label for="eamil" class="form_label">Email</label>
+                </div>
+
+                <div class="form_group">
+                  <div class="form_radio-group">
+                    <input
+                      type="radio"
+                      class="form_radio-input"
+                      id="small"
+                      name="size"
+                    />
+                    <label for="small" class="form_radio-label">
+                      <span class="form_radio-button"></span>
+                      短期行程
+                    </label>
+                  </div>
+
+                  <div class="form_radio-group">
+                    <input
+                      type="radio"
+                      class="form_radio-input"
+                      id="large"
+                      name="size"
+                    />
+                    <label for="large" class="form_radio-label">
+                      <span class="form_radio-button"></span>
+                      長期行程
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form_group group_margin">
+                  <button class="btn btn--green">下一步 &rarr;</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ------------------- -->
+    <!-- 最底層網站簡介 -->
+
+    <footer class="footer">
+      <div class="footer_logo-box">
+        <picture class="footer_logo">
+          <source
+            srcset="
+              img/logo-green-small-1x.png 1x,
+              img/logo-green-small-2x.png 2x
+            "
+            media="(max-width:37.5em)"
+          />
+          <img
+            srcset="./img/logo-green-1x.png 1x, ./img/logo-green-2x.png 2x"
+            alt="Full logo"
+            class="footer_logo"
+          />
+        </picture>
+      </div>
+      <div class="footer_flex">
+        <div class="footer_flex_1">
+          <div class="footer_navigation">
+            <ul class="footer_list">
+              <li class="footer_item">
+                <a href="#" class="footer_link">公司</a>
+              </li>
+              <li class="footer_item">
+                <a href="#" class="footer_link">聯絡我們</a>
+              </li>
+              <li class="footer_item">
+                <a href="#" class="footer_link">事業發展</a>
+              </li>
+              <li class="footer_item">
+                <a href="#" class="footer_link">隱私政策</a>
+              </li>
+              <li class="footer_item">
+                <a href="#" class="footer_link">條款</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_flex_2">
+          <p class="footer_copyright">© 2023</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ------------------- -->
+    <!-- 三大卡片中的彈出視窗 -->
+
+    <div class="popup" id="popup">
+      <div class="popup_content">
+        <div class="popup_left">
+          <img src="./img/nat-8.jpg" alt="Tour photo" class="popup_img" />
+          <img src="./img/nat-9.jpg" alt="Tour photo" class="popup_img" />
+        </div>
+        <div class="popup_right">
+          <a href="#section-tours" class="popup_close">&times;</a>
+          <h2 class="heading-secondary">現在開始預約</h2>
+          <h3 class="heading-tertiary">重要 &ndash; 請注意閱讀以下注意事項</h3>
+          <p class="popup_text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas
+            fuga ducimus quidem aut soluta voluptates! Lorem ipsum dolor sit
+            amet consectetur, adipisicing elit. Voluptas fuga ducimus quidem aut
+            soluta voluptates! Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Voluptas fuga ducimus quidem aut soluta
+            voluptates! Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Voluptas fuga ducimus quidem aut soluta voluptates! Lorem
+            ipsum dolor sit amet consectetur, adipisicing elit. Voluptas fuga
+            ducimus quidem aut soluta voluptates! Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Voluptas fuga ducimus quidem aut
+            soluta voluptates! Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Voluptas fuga ducimus quidem aut soluta
+            voluptates!Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Voluptas fuga ducimus quidem aut soluta voluptates!
+          </p>
+          <a href="#" class="btn btn--green popup_btn">預約</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

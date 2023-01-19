@@ -1,0 +1,118 @@
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(black, 0.8);
+  z-index: 5000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(black, 0.3);
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:target &_content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  &_content {
+    @include absCenter;
+
+    width: 75%;
+    background-color: #fff;
+    box-shadow: 0 2rem 4rem rgba(black, 0.2);
+    border-radius: 3px;
+    display: flex;
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all 0.4s 0.2s;
+
+    @include respond(tab-port) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &_close {
+    &:link,
+    &:visited {
+      color: #777;
+      position: absolute;
+      top: 2.5rem;
+      right: 2.5rem;
+      font-size: 3rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+      line-height: 1;
+    }
+
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+
+  &_left {
+    flex: 0 0 33.333%;
+    display: flex;
+    flex-direction: column;
+
+    @include respond(tab-port) {
+      display: flex;
+      flex-direction: row;
+    }
+    @include respond(phone) {
+      display: none;
+    }
+  }
+  &_right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3rem 5rem;
+    @include respond(tab-port) {
+      justify-content: center;
+      align-items: center;
+    }
+    @include respond(phone) {
+      padding: 0 2rem;
+    }
+  }
+  &_img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    @include respond(tab-port) {
+      width: 50%;
+      height: 50%;
+    }
+  }
+  &_text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid #eee;
+
+    hyphens: auto;
+    @include respond(phone) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &_btn {
+    margin-bottom: 2rem;
+  }
+}
